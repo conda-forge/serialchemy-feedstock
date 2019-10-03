@@ -1,5 +1,5 @@
 {% set name = "serialchemy" %}
-{% set version = "0.20.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a4af53b49b8735d031e518961b33a3e8ebcfb2008b9290483dd3a3267d66ce3f
+  sha256: ed989ee4ed759695a2ec116e7192c43036fa81dea9b2a682eedac7238b94b664
 
 build:
   noarch: python
