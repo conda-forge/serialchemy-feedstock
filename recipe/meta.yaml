@@ -1,5 +1,5 @@
 {% set name = "serialchemy" %}
-{% set version = "0.4.0" %}
+{% set version = "1.0.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ce323692936de35b7ba0525dd60e4c877cd22cf3a3dd8e2d89ae712c2d5c5591
+  sha256: 65826c02fd57713d8ccf32e0f8ba61a01bafbd7652b546d32edb84923ac79732
 
 build:
   noarch: python
@@ -17,11 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
     - setuptools_scm
   run:
-    - python >=3.6
-    - sqlalchemy >=1.1
+    - python >=3.8
+    - sqlalchemy >=1.4, <2.0
 
 test:
   imports:
@@ -42,3 +42,4 @@ extra:
     - lincrosenbach
     - kfasolin
     - nicoddemus
+    - lvoliveira
