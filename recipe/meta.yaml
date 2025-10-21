@@ -1,5 +1,5 @@
 {% set name = "serialchemy" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 344c0f54cf6962dac00e87c380e40d608d38610b82909e9c1237e0148874ec1c
+  sha256: 66c5a715c0da19372a016ea84fdbd06799b1eed87904a668d6d554507d399a9f
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - setuptools_scm
   run:
     - python >={{ python_min }}
-    - sqlalchemy >=1.4, <2.0
+    - sqlalchemy >=1.4,<2.0
 
 test:
   requires:
